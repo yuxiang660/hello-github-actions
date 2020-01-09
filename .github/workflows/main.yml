@@ -8,4 +8,4 @@ jobs:
     - uses: actions/checkout@v1
     - uses: ./action-a
       env:
-        MY_NAME: "Mona"
+        MY_NAME: ${{ secrets.GITHUB_TOKEN }}
